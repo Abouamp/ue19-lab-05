@@ -37,3 +37,9 @@ jobs:
           push: true
           tags: ghcr.io/abouamp/ue19-lab-05
 
+      # 4. Scanner l'image Docker pour les vulnerabilites (cf. https://trivy.dev/v0.17.2/)
+      - name: Scanner l'image Docker pour les vulnerabilites
+        uses: aquasecurity/trivy-action@master # On utilise l'action "trivy" pour scanner l'image Docker
+        with:
+          image-ref: ghcr.io/abouamp/ue19-lab-05
+
