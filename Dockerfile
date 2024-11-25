@@ -1,8 +1,7 @@
-# Utiliser une image de base Python légère
-FROM python:3.9-slim
+FROM python:3.13.0
 
 # Définir le répertoire de travail
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copier les fichiers nécessaires
 COPY app.py requirements.txt ./
@@ -10,6 +9,6 @@ COPY app.py requirements.txt ./
 # Installer les dépendances
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Définir le point d'entrée
+# Commande par défaut pour exécuter le script
 CMD ["python", "app.py"]
 
