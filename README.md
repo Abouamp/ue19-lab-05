@@ -6,7 +6,6 @@ Cette application interroge l'API publique JokeAPI et affiche une blague aléato
 
 ### Pré-requis
 - Python 3.9+
-- Pip
 - Docker (facultatif, si vous souhaitez exécuter via conteneur)
 
 ### Étapes d'installation
